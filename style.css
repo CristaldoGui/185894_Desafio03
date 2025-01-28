@@ -16,7 +16,7 @@ body {
     background-color: #F5F9FF;
     display: flex;
     justify-content: center;
-    padding-top: 10em;
+    padding-top: 2em;
     padding-bottom: 2em;
     overflow-y: scroll;
 }
@@ -167,6 +167,10 @@ img {
 }
 
 @media (min-width: 780px) {
+    body {
+        padding-top: 8em;
+    }
+
     main {
         border: .1em solid var(--gray-color);
         min-width: 40em;
