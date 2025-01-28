@@ -1,0 +1,214 @@
+:root {
+    --button-color: #2D70FD;
+    --gray-color: #EEEEEE;
+    --text-grey-color: #B1BACB;
+    --title-color: #11175E;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", serif;
+}
+
+body {
+    background-color: #F5F9FF;
+    display: flex;
+    justify-content: center;
+    padding-top: 10em;
+    padding-bottom: 2em;
+    overflow-y: scroll;
+}
+
+main {
+    background-color: #FFFFFF;
+    padding: 1.5em 2em 1.5em 2em;
+    border-radius: 1em;
+    border: .1em solid var(--gray-color);
+    width: auto;
+    min-width: 21.4em;
+    position: sticky;
+}
+
+#title-board {
+    font-size: .8em;
+    font-weight: 600;
+    color: var(--title-color);
+}
+
+button {
+    background-color: var(--button-color);
+    color: #FFFFFF;
+    border: none;
+    align-self: center;
+}
+
+.displayNone {
+    display: none;
+}
+
+button:hover {
+    background-color: #315dba;
+    cursor: pointer;
+}
+
+#div-inputs-board {
+    margin: 1.5em 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-board {
+    border: 1px solid var(--gray-color);
+    border-radius: .5em;
+    padding-left: 1em;
+    height: 3.5em;
+    width: 100%;
+    outline: none;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.input-board::placeholder {
+    color: var(--text-grey-color);
+}
+
+.input-board:hover {
+    background-color: #f9f9fb;
+    transition-duration: 1s;
+}
+
+#button-inputs {
+    border-radius: .5em;
+    height: 3.5em;
+    width: 100%;
+}
+
+.div-cards-taks{
+    padding: 1.5em 2em 1.5em 2em;
+    border: 1px solid var(--gray-color);
+    border-radius: .5em;
+    margin-bottom: .5em;
+}
+
+#div-cards-taks:hover {
+    background-color: #f9f9fb;
+    transform: translateY(-.2em);
+    transition-duration: 0.4s;
+}
+
+.card-task {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: start;
+    color: var(--title-color);
+}
+
+.card-task h3 {
+    font-size: .9em;
+    margin-bottom: 1em;
+    font-weight: 500;
+}
+
+.card-task button {
+    width: 8.5em;
+    height: 3.5em;
+    border-radius: .5em;
+}
+
+.card-infos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--text-grey-color);
+    font-size: .8em;
+}
+
+.div-card-tag {
+    border: 2px solid var(--gray-color);
+    border-radius: 1em;
+    padding: .4em;
+    margin-right: .8em;
+    text-align: center;
+}
+
+.card-date {
+    margin-top: .5em;
+    margin-bottom: 1em;
+}
+
+#div-line {
+    width: 100%;
+    background-color: var(--gray-color);
+    height: 1px;
+    margin: 1.5em 0
+}
+
+#div-taks-done {
+    display: flex;
+    justify-content: end;
+    color: var(--text-grey-color);
+    font-size: .9em;
+}
+
+.task-done h3{
+    text-decoration: line-through;
+    color: var(--text-grey-color);
+}
+
+img {
+    width: 32px;
+    height: 32px;
+    align-self: center;
+    margin-top: .45em;
+    margin-bottom: .50em;
+}
+
+@media (min-width: 780px) {
+    main {
+        border: .1em solid var(--gray-color);
+        min-width: 40em;
+    }
+
+    #div-inputs-board {
+        margin: 1.5em 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #div-inputs-board button{
+        width: 10em;
+    }
+
+    #title-board {
+        font-size: 1.3em;
+        font-weight: 600;
+        color: var(--title-color);
+    }
+
+    .input-board {
+        margin-bottom: 0;
+    }
+
+    .card-task {
+        flex-direction: row; 
+    }
+
+    .card-infos {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        color: var(--text-grey-color);
+        font-size: .8em;
+    }
+
+    img {
+        width: 3em;
+        height: 3em;
+    }
+
+}

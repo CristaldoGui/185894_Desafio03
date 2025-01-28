@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>To do list</title>
+</head>
+<body>
+    <main id="task-board">
+        <div id="header-board">
+            <header id="title-board">
+                <h1>Board de tarefas</h1>
+            </header>
+           <div id="div-inputs-board">
+                <input type="text" name="taskName" placeholder="Nome da tarefa" class="input-board" id="input-task-name">
+                <input type="text" name="tag" placeholder="Etiqueta" class="input-board" id="input-task-tag">
+                <button id="button-inputs"> + </button>
+           </div>
+        </div>
+
+        <div id="tasks-container">
+            <!-- As tarefas serão adicionadas aqui -->
+          </div>
+
+        <div id="div-line"></div>
+
+        <footer>
+            <div id="div-taks-done">
+                <p id="tasks-done">0 tarefas concluidas</p>
+            </div>
+        </footer>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
